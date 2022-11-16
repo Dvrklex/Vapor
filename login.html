@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="css/nav.css" />
+   <link rel="stylesheet" href="css/styles.css" />
+   <link rel="stylesheet" href="css/login.css" />
+   <link rel="stylesheet" href="css/footer.css" />
+   <title>Document</title>
+ </head>
+ <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="img/logo2.png" alt="logo" />
+            </div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            
+            <div class="menu">
+                <section>
+                    <form action="">
+                        <input type="search" placeholder="Buscar..." />
+                    </form>
+                </section>
+                
+                <li class="drop-service">
+                    <a href="tienda.html">Tienda</a>
+                    <!-- DROPDOWN MENU  CATEGORIAS-->
+                    <ul class="dropdown">
+                        <li><a href="/">Ofertas</a></li>
+                        <li><a href="/">Recomendados</a></li>
+                        <li><a href="/">Visto recientemente</a></li>
+                    </ul>
+                </li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li class="drop-service">
+                    <a href="/">Categorías</a>
+                    <!-- DROPDOWN MENU  CATEGORIAS-->
+                    <ul class="dropdown">
+                        <li><a href="/">Géneros </a></li>
+                        <li><a href="/">Modos de juego</a></li>
+                    </ul>
+                </li>
+                
+            </div>
+            </ul>
+        </nav>
+
+        <!-- <div class="neonText-container">
+            <h2 class="neonText">Bienvenido a Vapor</h2>    
+        </div> -->
+        
+        <div class="colContainer">
+            <div class="col-8">
+                <section class="form_login">
+                    <h2 class="loginTitle">Iniciar Sesión</h2>
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" />
+                        <label class="form-label"> Nombre de usuario</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" placeholder="password" />
+                        <label class="form-label">Contraseña</label>
+                    </div>
+                    
+                    <div class="btn_login_Container">
+                        <a href="tienda.html">Iniciar sesión</a>
+                    </div>
+                    <div class="forgot_pwd">
+                        <a href="">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </section>
+            </div>
+            <div class="col-4">
+                <p>Unete a Vapor y descubre miles de títulos para jugar</p>
+                <div class="logo_container">
+                    <img src="img/logo2.png"/>
+                </div>
+                <p>Es gratis y fácil de usar</p>
+                <div class="btnContainer">
+                    <a href="signin.html">Unete a Vapor</a>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-bottom">
+                <p>Vapor Games &copy; 2022</p>
+                        <div class="footer-menu">
+                          <ul class="f-menu">
+                            <li><a href="tienda.html">Tienda   •</a></li>
+                            
+                            <li><a href="">Sobre nosotros  •</a></li>
+                             
+                            <li><a href="">Contacto  •</a></li>
+                            
+                            <li><a href="">Soporte  •</a></li>
+                          </ul>
+                        </div>
+            </div>
+        </footer>
+ </body>
+</html>
