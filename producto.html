@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="css/nav.css"/>
+   <link rel="stylesheet" href="css/footer.css"/>
+   <link rel="stylesheet" href="css/styles.css" />
+   <link rel="stylesheet" href="css/noticias.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   
+
+   <title>Vapor</title>
+ </head>
+ <body>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="img/logo2.png" alt="logo" />
+            </div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            
+            <div class="menu">
+                <section>
+                    <form action="">
+                        <input type="search" placeholder="Buscar..." />
+                    </form>
+                </section>
+
+                
+
+                <li class="drop-service">
+                    <a href="tienda.html">Tienda</a>
+                    <!-- DROPDOWN MENU  CATEGORIAS-->
+                    <ul class="drop_down">
+                        <li><a href="/">Ofertas</a></li>
+                        <li><a href="/">Recomendados</a></li>
+                        <li><a href="/">Visto recientemente</a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <li><a href="noticias.html">Noticias</a></li>
+
+                
+
+                <li class="drop-service">
+                    <a href="categorias.html">Categorías</a>   
+                    <ul class="drop_down">
+                        <li><a href="/">Géneros </a></li>
+                        <li><a href="/">Modos de juego</a></li>
+                    </ul>
+                </li>
+ 
+                <li class="drop-service">
+                    <a href="/">Perfil</a>
+                    <ul class="drop_down">
+                        <li><a href="/">Cuenta</a></li>
+                        <li><a href="/">Biblioteca</a></li>
+                        <li><a href="/">Lista de deseados</a></li>
+                        <li><a href="/">Amigos</a></li>
+                        <li><a href="login.html">Cerrar sesión</a></li>
+                    </ul>
+                </li>
+                
+                
+                <li class="carrito">
+                    <a href="/">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"  preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                <path d="M4 589 c-10 -17 16 -29 68 -29 l46 0 20 -87 c47 -203 48 -210 28 -232 -26 -28 -14 -69 25 -85 26 -11 28 -14 15 -26 -34 -28 -6 -90 41 -90 24 0 53 30 53 55 0 10 -7 27 -17 37 -15 17 -12 18 90 18 l106 0 -16 -29 c-16 -27 -16 -30 0 -55 18 -27 45 -33 78 -16 24 13 27 78 4 86 -14 6 -13 8 2 20 36 26 -1 33 -177 36 -148 3 -175 5 -175 18 0 13 29 16 184 20 l184 5 40 139 c31 112 36 140 25 147 -7 5 -115 9 -239 9 l-227 0 -6 35 -7 35 -69 0 c-40 0 -72 -5 -76 -11z"/>
+                            </g>
+                        </svg>
+    
+                    </a>
+                </li>
+            </div>
+            </ul>
+        </nav>
+
+        <div class="neonText-container">
+            <h2 class="neonText">Tienda</h2>    
+        </div>
+        <!-- CONTENIDO -->
+        <div class="container-noticias">
+            <div class="container">
+                <h1 class="p-5 text-white">Assasins Creed Mirage</h1>
+                <div class="row">
+                
+                    <div class="col-lg-8">
+                       
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="img/assasinscreed.jpg" alt="..." /></a>
+                            <div class="card-body" style="background-color: #021116;" >
+                               
+                                <a class="btn btn-primary m-1" href="#!">Añadir a tu lista de deseados</a>
+                                <a class="btn btn-primary m-1" href="#!">Seguir</a>
+                                <p></p>
+                                <div class="d-flex flex-row-reverse bd-highlight">
+                               
+                                <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">producto se ha añadido!!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    el producto ha sido añadido al carrito con exito.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <a class="btn btn-dark m-2" href="#!">ARS $224,99</a>
+                                <span class="badge rounded-pill bg-success p-1 m-3" >-75%</span>
+                                
+                                
+                                
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Filas anidadas para imagenes-->
+                        <div class="row">
+                            <div class="col-lg-6">
+                             
+                                <div class="card mb-4">
+                                    <a href="#!"><img class="card-img-top" src="img/mirage.jpg" alt="..." /></a>
+                                    <div class="card-body" style="background-color: #021116;">
+                                      
+                                    </div>
+                                </div>
+                              
+                                <div class="card mb-4">
+                                    <a href="#!"><img class="card-img-top" src="img/mirage2.jpg" alt="..." /></a>
+                                    <div class="card-body"style="background-color: #021116;">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                             
+                                <div class="card mb-4">
+                                    <a href="#!"><img class="card-img-top" src="img/mirage3.jpg" alt="..." /></a>
+                                    <div class="card-body"style="background-color: #021116;">
+                            
+                                    </div>
+                                </div>
+                            
+                                <div class="card mb-4">
+                                    <a href="#!"><img class="card-img-top" src="img/mirage4.jpg" alt="..." /></a>
+                                    <div class="card-body"style="background-color: #021116;">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    
+                <nav aria-label=""> <!-- no eliminar porque acomoda la portada y las categorias -->
+                    
+                    </ul>
+                </nav>
+            </div>
+          
+
+            <div class="col-lg-4">
+                <!-- Portada-->
+                <a href="#!"><img class="card-img-top" src="img/mirage5.jpg" alt="..." /></a>
+                <div class="card mb-4"style="background-color: #021116;">
+                    <p class="text-white p-2">Assassin's Creed Mirage es un próximo videojuego de acción y aventuras desarrollado por Ubisoft Bordeaux y publicado por Ubisoft. Será la decimotercera entrega principal de la serie Assassin's Creed y la sucesora de Assassin's Creed Valhalla de 2020.</p>
+                    <div class="card-body">
+                        <div class="input-group">
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- Categorias -->
+                <div class="card mb-4">
+                    <div class="card-header text-white"style="background-color: #021116;">Categories</div>
+                    <div class="card-body" style="background-color: #021116;">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-outline-primary">Accion</button>
+                                <button type="button" class="btn btn-dark">Aventura</button>
+                                <button type="button" class="btn btn-outline-primary">Rol</button>
+                                <button type="button" class="btn btn-dark">+</button>
+                                </ul>
+                            </div>
+                        
+                           
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            
+            
+
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+       <!--  <footer>
+            <div class="footer-bottom">
+                <p>Vapor Games &copy; 2022</p>
+                        <div class="footer-menu">
+                          <ul class="f-menu">
+                            <li><a href="tienda.html">Tienda   •</a></li>
+                            
+                            <li><a href="">Sobre nosotros  •</a></li>
+                             
+                            <li><a href="">Contacto  •</a></li>
+                            
+                            <li><a href="">Soporte  •</a></li>
+                          </ul>
+                        </div>
+            </div>
+        </footer> -->
+ </body>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+</html>
