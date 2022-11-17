@@ -13,40 +13,46 @@
  </head>
  <body>
     <!-- Inicio Menu bar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" >
-        <div class="container-fluid">
-          
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark " >
+      <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <img src="img/logo.png" alt="" width="50" height="45">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">              
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="juegos.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading1">Fundaciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">Menciones</a>
-              </li>               
-            </ul>
-            
-            <!-- Boton Unirse que abre un modal -->
-            <a class="btn btn-outline-success" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Únete</a>
-            
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="img/logo2.png" alt="" width="50" height="45">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">              
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="drop-service nav-item">
+              <a class="nav-link" href="juegos.html">Tienda</a>
+              <ul class="drop_down">
+                <li><a href="/">Categorías</a></li>
+                <li><a href="/">Ofertas</a></li>
+                <li><a href="/">Recomendados</a></li>
+                <li><a href="/">Visto recientemente</a></li>
+              </ul>
+            </li>
+            <!-- DROPDOWN MENU  CATEGORIAS-->
+              
+          
+          </ul>
+            <form action="">
+                <input type="search" placeholder="Search..." />
+            </form>
+          <!-- Modal de Carrito -->
+          <!-- Button trigger modal -->
+          <div class="modal_container_btn">
+            <a class="btn btn-outline-warning" data-bs-toggle="modal" href="#carrito" role="button">Mi Carrito</a>
           </div>
+          
         </div>
-        
-      </nav>
-        <!-- Fin Menu bar -->
+      </div>
+    </nav>
+      <!-- Fin Menu bar -->
        <!-- CONTENIDO  DEL PERFIL-->
 
-       <div class="container-noticias justify-content-center">
+      <div class="container-noticias justify-content-center">
         <h2 class="px-5 pt-5 text-white">Alexis Peralta</h2>
 
         <div class="container-fluid d-flex justify-content-center">
@@ -190,9 +196,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                </div>
-                
+                </div>  
             </div>
         </div>
     </div>
@@ -200,367 +204,433 @@
 
 
 
-        <!-- Inicio de footer -->
-        <div class="sticky-md-bottom "> 
-          <footer>
-            <div class="option"><a  data-bs-toggle="modal" href="#terminos" role="button">Términos y condiciones</a></div>
-            <div class="option"><a data-bs-toggle="modal" href="#faqs" role="button">FAQ</a></div>
-            <div class="option"><a data-bs-toggle="modal" href="#contacto" role="button">Contacto</a></div>
-          </footer>
-        </div>
-          <!-- Fin de Footer -->
-      
-          <!-- Script -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Inicio de footer -->
+ <div class="sticky-md-bottom"> 
+  <footer>
+    <div class="option"><a  data-bs-toggle="modal" href="#terminos" role="button">Términos y condiciones</a></div>
+    <div class="option"><a data-bs-toggle="modal" href="#faqs" role="button">FAQ</a></div>
+    <div class="option"><a data-bs-toggle="modal" href="#contacto" role="button">Contacto</a></div>
+  </footer>
+</div>
+  <!-- Fin de Footer -->
 
-          <!-- Inicio de modal FAQs -->
-          <div class="modal" id="faqs"tabindex="-1">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <!--Section: FAQ-->
-                  <section>
-                    <h2 class="h1-responsive font-weight-bold text-center my-4 text-success fw-bold">Preguntas frecuentes</h2>
-                    <!--First row-->
-                    <div class="card card border-success mb-3">
-                      <div class="card-body">
-                        <div class="accordion" id="accordionExample">
-                          <!-- Primera pregunta -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <h6 class="mb-3 text-success fw-bold">¿Se pueden visitar las fundaciones?</h6>
-                              </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                Por supuesto. Estas funcionaciones ofrecen recorridos guiados para que puedas conocer sus animales y más.
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Segunda pregunta -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <h6 class="mb-3 text-success fw-bold">¿Cuál es la cantidad mínima para donar?</h6>
-                              </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                Actualmente, la cantidad mínima para donar es de 1€.
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Tercera pregunta -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <h6 class="mb-3 text-success fw-bold">¿Cómo puedo saber si mi donación llegó correctamente?</h6>
-                              </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                Al momento de realizar una donación, se te enviará un correo electrónico con una confirmación de la misma.
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <!-- Quinta pregunta -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <h6 class="mb-3 text-success fw-bold">¿Puedo donar a más de una fundación?</h6>
-                              </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                Si, puedes donar a más de una fundación, esto es totalmente a elección, tanto a quien donar como cuanto donar.
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Sexta pregunta -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSix">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                <h6 class="mb-3 text-success fw-bold">¿Es seguro hacer donativos a través de la web?</h6>
-                              </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                Si. Al momento de efectuar la donación, se le enviará un correo electrónico con el comprobante y confirmación de la misma. El dinero enviado, es depositado en un plazo de 24 horas en la cuenta bancaria de la fundación.
-                              </div>
-                            </div>
-                          </div>
-                          <!-- Septima pregunta -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSeven">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                <h6 class="mb-3 text-success fw-bold">¿Cómo se financian las diferentes fundaciones?</h6>
-                              </button>
-                            </h2>
-                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                Se financian a travez de las diferentes donaciones de las personas que hacen donativos. Y ademas, se financian a travez de empresas que ofrecen comida, medicamentos y demás elementos que ayudan al bienestar de nuestro animales.
-                              </div>
-                            </div>
-                          </div>
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  
+  <!-- Modal inicio de FAQ -->
+  <div class="modal" id="faqs"tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content ">
+       
+        <div class="modal-body">
+          <!--Section: FAQ-->
+          <section>
+            <h2 class="h1-responsive font-weight-bold text-center my-4 text-success fw-bold">Preguntas frecuentes</h2>
+            <!--First row-->
+            <div class="card card border-success mb-3">
+              <div class="card-body">
+                <div class="accordion" id="accordionExample">
+                  <!-- Primera pregunta -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h6 class="mb-3 text-success fw-bold">¿Se pueden visitar las fundaciones?</h6>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Por supuesto. Estas funcionaciones ofrecen recorridos guiados para que puedas conocer sus animales y más.
                       </div>
                     </div>
-                    </div>
-
-                  </section>
-                  <!--Section: FAQ-->
                   </div>
-                  <div class="modal-footer d-flex justify-content-center">
-                    
-                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
-                  </div>
-                </div>
-              </div>
-            </div>  
-          <!-- Fin de modal FAQs -->
-
-          <!-- Modal de contacto -->
-          <div class="modal" id="contacto" tabindex="-1">
-            <div class="modal-dialog ">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <!--Section: Contact-->
-                  <section class="contact-section my-5">
-                    <!--Section heading-->
-                    <h2 class="h1-responsive font-weight-bold text-center my-4 text-success fw-bold">¿Tienes alguna pregunta?</h2>
-                    <!--Section description-->
-                    <p class="text-center w-responsive mx-auto mb-5">¡No te preocupes! ¡Escribe a nuestro equipo de soporte y te responderemos a la brevedad!</p>
-                    <!--Form with header-->
-                    <div class="card card border-success mb-3">
-                      <div class="card-body">
-                        <!--Body-->
-                        <div class="md-form">
-                          <!-- Nombre y apellido en la misma linea con dos formularios-->
-                          <div class="row">
-                            <div class="col-md-6">
-                              <label for="form-name">Nombre</label>
-                              <input type="text" id="form-name" class="form-control" placeholder="Juanito">
-                            </div>
-                            <div class="col-md-6">
-                              <label for="form-surname">Apellido</label>
-                              <input type="text" id="form-surname" class="form-control" placeholder="Alcachofa">
-                            </div>
-                        </div>
-                        <div class="md-form">
-                          <label for="form-email">Correo</label>
-                        </div>
-                        <div class="md-form">
-                          <i class="fas fa-tag prefix grey-text"></i>
-                          <input type="text" id="form-Subject" class="form-control" placeholder="ejemplo@ejemplo.com">
-                          <label for="form-Subject">Asunto</label>
-                          <i class="fas fa-envelope prefix grey-text"></i>
-                          <input type="text" id="form-email" class="form-control" placeholder="asunto">
-                        </div>
-                        <div class="md-form">
-                          <label for="form-Subject">Mensaje</label>
-                          <i class="fas fa-pencil-alt prefix grey-text"></i>
-                          <textarea id="form-text" class="form-control md-textarea" rows="3" placeholder="Escriba asi su consulta..."></textarea>
-                        </div>
+                  <!-- Segunda pregunta -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h6 class="mb-3 text-success fw-bold">¿Cuál es la cantidad mínima para donar?</h6>
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Actualmente, la cantidad mínima para donar es de 1€.
                       </div>
                     </div>
-                  </section>
-                  <div class="text-center d-flex justify-content-around">
-                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Enviar</button>
                   </div>
-                  <!--Section: Contact-->
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Fin de modal contacto -->
-
-          <!-- Modal de los terminos -->
-          <div class="modal" id="terminos" tabindex="-1">
-            <div class="modal-dialog modal-xl">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Términos y condiciones ¡Bienvenido a Aves!</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <p>
-                      Estos términos y condiciones describen las reglas y regulaciones
-                      para el uso del sitio web de DV-Aves, ubicado en dv-aves.com. Al acceder a este sitio web, asumimos que acepta estos términos
-                      y condiciones. No continúe usando Aves si no está de acuerdo con todos los términos y condiciones establecidos en esta página.
-                      Cookies: El sitio web utiliza cookies para ayudar a personalizar su experiencia en línea. Al acceder a Aves,
-                      usted acepta utilizar las cookies requeridas. Una cookie es un archivo de texto que un servidor de páginas web coloca en
-                      su disco duro. Las cookies no se pueden utilizar para ejecutar programas o enviar virus a su computadora. Las cookies
-                      se le asignan de forma única y solo puede leerlas un servidor web en el dominio que le emitió la cookie. Podemos 
-                      usar cookies para recopilar, almacenar y rastrear información con fines estadísticos o de marketing para operar 
-                      nuestro sitio web. Tiene la capacidad de aceptar o rechazar cookies opcionales. Hay algunas cookies requeridas que
-                      son necesarias para el funcionamiento de nuestro sitio web. Estas cookies no requieren su consentimiento ya que
-                      siempre funcionan. Tenga en cuenta que al aceptar las Cookies requeridas, también acepta las Cookies de terceros,
-                      que pueden usarse a través de servicios proporcionados por terceros si utiliza dichos servicios en nuestro sitio web,
-                      por ejemplo, una ventana de visualización de video proporcionada por terceros e integrada. en nuestro sitio web. 
-                      Licencia: a menos que se indique lo contrario, DV-Aves y/o sus licenciantes poseen los derechos de propiedad 
-                      intelectual de todo el material de Aves. Todos los derechos de propiedad intelectual están reservados. 
-                      Puede acceder a esto desde Aves para su uso personal sujeto a las restricciones establecidas en estos términos 
-                      y condiciones. Usted no debe: Copiar o volver a publicar material de Aves Vender, alquilar o sublicenciar
-                      material de Aves Reproducir, duplicar o copiar material de Aves Redistribuir contenido de Aves 
-                      Este Acuerdo comenzará en la fecha del presente. Partes de este sitio web ofrecen a los usuarios 
-                      la oportunidad de publicar e intercambiar opiniones e información en ciertas áreas del sitio web. DV-Aves 
-                      no filtra, edita, publica o revisa los Comentarios antes de su presencia en el sitio web. Los comentarios
-                      no reflejan los puntos de vista ni las opiniones de DV-Aves, sus agentes y/o afiliados. Los comentarios 
-                      reflejan los puntos de vista y las opiniones de la persona que publica sus puntos de vista y opiniones. 
-                      En la medida permitida por las leyes aplicables, DV-Aves no será responsable de los Comentarios ni de ninguna
-                      obligación, daño o gasto causado y/o sufrido como resultado de cualquier uso y/o publicación y/o apariencia
-                      de los Comentarios. en este sitio web. DV-Aves se reserva el derecho de monitorear todos los Comentarios y 
-                      eliminar cualquier Comentario que pueda considerarse inapropiado, ofensivo o que cause el incumplimiento de
-                      estos Términos y Condiciones. Usted garantiza y declara que: Tiene derecho a publicar los Comentarios en
-                      nuestro sitio web y tiene todas las licencias y consentimientos necesarios para hacerlo; Los Comentarios
-                      no invaden ningún derecho de propiedad intelectual, incluidos, entre otros, derechos de autor, patentes
-                      o marcas registradas de terceros; Los Comentarios no contienen ningún material difamatorio, calumnioso, 
-                      ofensivo, indecente o ilegal de otro modo, que es una invasión de la privacidad. Los Comentarios no se 
-                      utilizarán para solicitar o promover negocios o costumbres o presentar actividades comerciales o actividades
-                      ilegales.
-                      Por la presente, otorga a DV-Aves una licencia no exclusiva para usar, reproducir, editar y autorizar a otros a usar,
-                      reproducir y editar cualquiera de sus Comentarios en cualquiera y todas las formas, formatos o medios. 
-                      Hipervínculos a nuestro contenido: las siguientes organizaciones pueden vincular a nuestro sitio web sin aprobación 
-                      previa por escrito: agencias gubernamentales; Los motores de búsqueda; Organizaciones de noticias; Los distribuidores
-                      de directorios en línea pueden vincularse a nuestro sitio web de la misma manera que vinculan a los sitios web de otras
-                      empresas enumeradas; y empresas acreditadas en todo el sistema, excepto las que solicitan organizaciones sin fines de lucro, 
-                      centros comerciales de caridad y grupos de recaudación de fondos de caridad que no pueden tener hipervínculos
-                      a nuestro sitio web. Estas organizaciones pueden vincular a nuestra página de inicio, publicaciones u otra información del
-                      sitio web siempre que el enlace: (a) no sea engañoso de ninguna manera; (b) no implica falsamente patrocinio, respaldo o
-                      aprobación de la parte vinculada y sus productos y/o servicios; y (c) encaja dentro del contexto del sitio de la parte
-                      vinculada. Podemos considerar y aprobar otras solicitudes de enlace de los siguientes tipos de organizaciones: fuentes 
-                      de información comercial y/o de consumidores comúnmente conocidas; sitios de la comunidad dot.com; asociaciones u otros
-                      grupos que representen organizaciones benéficas; distribuidores de directorios en línea; portales de internet; empresas
-                      de contabilidad, derecho y consultoría; e instituciones educativas y asociaciones comerciales. Aprobaremos las 
-                      solicitudes de enlace de estas organizaciones si decidimos que: (a) el enlace no nos haría ver desfavorablemente
-                      a nosotros mismos oa nuestros negocios acreditados; (b) la organización no tiene registros negativos con nosotros;
-                      (c) el beneficio para nosotros de la visibilidad del hipervínculo compensa la ausencia de DV-Aves; y (d) el enlace
-                      está en el contexto de información general de recursos. Estas organizaciones pueden vincular a nuestra página de 
-                      inicio siempre que el enlace: (a) no sea engañoso de ninguna manera; (b) no implica falsamente patrocinio, respaldo
-                      o aprobación de la parte vinculada y sus productos o servicios; y (c) encaja dentro del contexto del sitio de la
-                      parte vinculada. Si usted es una de las organizaciones enumeradas en el párrafo 2 anterior y está interesado en 
-                      vincular a nuestro sitio web, debe informarnos enviando un correo electrónico a DV-Aves. Incluya su nombre, el 
-                      nombre de su organización, la información de contacto, así como la URL de su sitio, una lista de las URL desde
-                      las que pretende vincular a nuestro sitio web y una lista de las URL de nuestro sitio a las que le gustaría Enlace.
-                      Espere 2-3 semanas para una respuesta. Las organizaciones aprobadas pueden tener hipervínculos a nuestro sitio web
-                      de la siguiente manera: mediante el uso de nuestro nombre corporativo; o Mediante el uso del localizador uniforme
-                      de recursos al que se vincula; o Usar cualquier otra descripción de nuestro sitio web vinculado que tenga
-                      sentido dentro del contexto y el formato del contenido en el sitio de la parte vinculada. No se permitirá 
-                      el uso del logotipo de DV-Aves u otra obra de arte para vincular en ausencia de un acuerdo de licencia de 
-                      marca registrada. Responsabilidad por el contenido: no seremos responsables de ningún contenido que aparezca 
-                      en su sitio web. Usted acepta protegernos y defendernos contra todos los reclamos que se presenten en su sitio
-                      web. Ningún enlace debe aparecer en ningún sitio web que pueda interpretarse como calumnioso, obsceno o 
-                      criminal, o que infrinja, de otro modo viole o promueva la infracción u otra violación de los derechos de
-                      terceros. Reserva de derechos: Nos reservamos el derecho de solicitarle que elimine todos los enlaces o 
-                      cualquier enlace particular a nuestro sitio web. Usted aprueba eliminar inmediatamente todos los enlaces 
-                      a nuestro sitio web a pedido. También nos reservamos el derecho de modificar estos términos y condiciones
-                      y su política de vinculación en cualquier momento.
-                      Al vincularse continuamente a nuestro sitio web, usted acepta estar sujeto y seguir estos términos y condiciones
-                      de vinculación. Eliminación de enlaces de nuestro sitio web: si encuentra algún enlace en nuestro sitio web 
-                      que sea ofensivo por cualquier motivo, puede contactarnos e informarnos en cualquier momento. Consideraremos 
-                      solicitudes para eliminar enlaces, pero no estamos obligados a hacerlo ni a responderle directamente. 
-                      No garantizamos que la información de este sitio web sea correcta. No garantizamos su integridad o exactitud, 
-                      ni prometemos asegurarnos de que el sitio web permanezca disponible o que el material del sitio web se mantenga
-                      actualizado. Descargo de responsabilidad: en la medida máxima permitida por la ley aplicable, excluimos todas
-                      las representaciones, garantías y condiciones relacionadas con nuestro sitio web y el uso de este sitio web.
-                      Nada en este descargo de responsabilidad: limitará o excluirá nuestra responsabilidad o la suya por muerte 
-                      o lesiones personales; limitar o excluir nuestra o su responsabilidad por fraude o tergiversación 
-                      fraudulenta; limitar cualquiera de nuestras responsabilidades o las suyas de cualquier manera que no
-                      esté permitida por la ley aplicable; o excluir cualquiera de nuestras o sus responsabilidades que no puedan
-                      ser excluidas bajo la ley aplicable. Las limitaciones y prohibiciones de responsabilidad establecidas 
-                      en esta Sección y en otras partes de este descargo de responsabilidad: (a) están sujetas al párrafo 
-                      anterior; y (b) rigen todas las responsabilidades que surjan en virtud de la exención de responsabilidad,
-                      incluidas las responsabilidades que surjan por contrato, agravio y por incumplimiento de obligaciones 
-                      legales. Siempre que el sitio web y la información y los servicios en el sitio web se proporcionen de 
-                      forma gratuita, no seremos responsables de ninguna pérdida o daño de ningún tipo.</p>
-
-                    Copyright © 2019 DV-Aves. Todos los derechos son reservados.
+                  <!-- Tercera pregunta -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h6 class="mb-3 text-success fw-bold">¿Cómo puedo saber si mi donación llegó correctamente?</h6>
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Al momento de realizar una donación, se te enviará un correo electrónico con una confirmación de la misma.
+                      </div>
+                    </div>
                   </div>
-                <div class="modal-footer d-flex justify-content-center">
-                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
                   
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Fin modal terminos-->
-          <!-- Esta parte es el modal de UNETE Iniciar sesion-->
-          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title  text-success fw-bold" id="exampleModalToggleLabel">¡Hola! Ingresa en tu cuenta</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Usuario</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                      <a href="#" class="link-primary">¿Has olvidado tu contraseña?</a>
-                    </div>                  
-                  </form>
-                </div>
-                <div class="modal-footer d-flex justify-content-evenly">
-                  <button class="btn btn-outline-info" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrarse</button>
-                  <button type="button" class="btn btn-outline-success" ><a href="perfil.html" class="login_a">Iniciar Sesión</a></button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Esta parte es el modal de UNETE Registrarse-->
-          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title  text-success fw-bold" id="exampleModalToggleLabel2">Únete a nosotros para mas novedades!</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail0" class="form-label">Correo electrónico</label>
-                      <input type="email" class="form-control" id="exampleInputEmail0" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie.</div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail2" class="form-label">Usuario</label>
-                      <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword2" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="exampleInputPassword2">
-                      <div id="emailHelp" class="form-text">La contraseña debe tener como mínimo 6 caracteres y distingue mayúsculas de minúsculas.</div>                      
-                    </div>                  
-                    <div class="mb-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          He leído y acepto: Consecuencias de aceptar las Políticas de privacidad
-                        </label>
+                  <!-- Quinta pregunta -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <h6 class="mb-3 text-success fw-bold">¿Puedo donar a más de una fundación?</h6>
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Si, puedes donar a más de una fundación, esto es totalmente a elección, tanto a quien donar como cuanto donar.
                       </div>
                     </div>
-                  </form>
-                    <div class="mb-3">
-                        <h6 class=".fs5 text">¿Ya tienes una cuenta?
-                        <a href="#" class="link-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Iniciar Sesión</a>
-                        </h6>
+                  </div>
+                  <!-- Sexta pregunta -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <h6 class="mb-3 text-success fw-bold">¿Es seguro hacer donativos a través de la web?</h6>
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Si. Al momento de efectuar la donación, se le enviará un correo electrónico con el comprobante y confirmación de la misma. El dinero enviado, es depositado en un plazo de 24 horas en la cuenta bancaria de la fundación.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Septima pregunta -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <h6 class="mb-3 text-success fw-bold">¿Cómo se financian las diferentes fundaciones?</h6>
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Se financian a travez de las diferentes donaciones de las personas que hacen donativos. Y ademas, se financian a travez de empresas que ofrecen comida, medicamentos y demás elementos que ayudan al bienestar de nuestro animales.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+          </section>
+          <!--Section: FAQ-->
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+  <!-- Fin de modal FAQs -->
+   <!-- Modal de contacto -->
+   <div class="modal" id="contacto" tabindex="-1">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!--Section: Contact-->
+          <section class="contact-section my-5">
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4 text-success fw-bold">¿Tienes alguna pregunta?</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">¡No te preocupes! ¡Escribe a nuestro equipo de soporte y te responderemos a la brevedad!</p>
+            <!--Form with header-->
+            <div class="card card border-success mb-3">
+              <div class="card-body">
+                <!--Body-->
+                <div class="md-form">
+                  <!-- Nombre y apellido en la misma linea con dos formularios-->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="form-name">Nombre</label>
+                      <input type="text" id="form-name" class="form-control" placeholder="Juanito">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="form-surname">Apellido</label>
+                      <input type="text" id="form-surname" class="form-control" placeholder="Ejemplo">
                     </div>
                 </div>
-                <div class="modal-footer d-flex justify-content-center">
-                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Registrarse</button>
+                <div class="md-form">
+                  <label for="form-email">Correo</label>
+                </div>
+                <div class="md-form">
+                  <i class="fas fa-tag prefix grey-text"></i>
+                  <input type="text" id="form-Subject" class="form-control" placeholder="ejemplo@ejemplo.com">
+                  <label for="form-Subject">Asunto</label>
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <input type="text" id="form-email" class="form-control" placeholder="asunto">
+                </div>
+                <div class="md-form">
+                  <label for="form-Subject">Mensaje</label>
+                  <i class="fas fa-pencil-alt prefix grey-text"></i>
+                  <textarea id="form-text" class="form-control md-textarea" rows="3" placeholder="Escriba asi su consulta..."></textarea>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="text-center d-flex justify-content-around">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Enviar</button>
+          </div>
+          <!--Section: Contact-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin de modal contacto -->
+
+  <!-- Modal de los terminos -->
+  <div class="modal" id="terminos" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Términos y condiciones ¡Bienvenido a Vapor Games!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+              Estos términos y condiciones describen las reglas y regulaciones
+              para el uso del sitio web de DV-Vapor Games, ubicado en dv-Vapor Games.com. Al acceder a este sitio web, asumimos que acepta estos términos
+              y condiciones. No continúe usando Vapor Games si no está de acuerdo con todos los términos y condiciones establecidos en esta página.
+              Cookies: El sitio web utiliza cookies para ayudar a personalizar su experiencia en línea. Al acceder a Vapor Games,
+              usted acepta utilizar las cookies requeridas. Una cookie es un archivo de texto que un servidor de páginas web coloca en
+              su disco duro. Las cookies no se pueden utilizar para ejecutar programas o enviar virus a su computadora. Las cookies
+              se le asignan de forma única y solo puede leerlas un servidor web en el dominio que le emitió la cookie. Podemos 
+              usar cookies para recopilar, almacenar y rastrear información con fines estadísticos o de marketing para operar 
+              nuestro sitio web. Tiene la capacidad de aceptar o rechazar cookies opcionales. Hay algunas cookies requeridas que
+              son necesarias para el funcionamiento de nuestro sitio web. Estas cookies no requieren su consentimiento ya que
+              siempre funcionan. Tenga en cuenta que al aceptar las Cookies requeridas, también acepta las Cookies de terceros,
+              que pueden usarse a través de servicios proporcionados por terceros si utiliza dichos servicios en nuestro sitio web,
+              por ejemplo, una ventana de visualización de video proporcionada por terceros e integrada. en nuestro sitio web. 
+              Licencia: a menos que se indique lo contrario, DV-Vapor Games y/o sus licenciantes poseen los derechos de propiedad 
+              intelectual de todo el material de Vapor Games. Todos los derechos de propiedad intelectual están reservados. 
+              Puede acceder a esto desde Vapor Games para su uso personal sujeto a las restricciones establecidas en estos términos 
+              y condiciones. Usted no debe: Copiar o volver a publicar material de Vapor Games Vender, alquilar o sublicenciar
+              material de Vapor Games Reproducir, duplicar o copiar material de Vapor Games Redistribuir contenido de Vapor Games 
+              Este Acuerdo comenzará en la fecha del presente. Partes de este sitio web ofrecen a los usuarios 
+              la oportunidad de publicar e intercambiar opiniones e información en ciertas áreas del sitio web. DV-Vapor Games 
+              no filtra, edita, publica o revisa los Comentarios antes de su presencia en el sitio web. Los comentarios
+              no reflejan los puntos de vista ni las opiniones de DV-Vapor Games, sus agentes y/o afiliados. Los comentarios 
+              reflejan los puntos de vista y las opiniones de la persona que publica sus puntos de vista y opiniones. 
+              En la medida permitida por las leyes aplicables, DV-Vapor Games no será responsable de los Comentarios ni de ninguna
+              obligación, daño o gasto causado y/o sufrido como resultado de cualquier uso y/o publicación y/o apariencia
+              de los Comentarios. en este sitio web. DV-Vapor Games se reserva el derecho de monitorear todos los Comentarios y 
+              eliminar cualquier Comentario que pueda considerarse inapropiado, ofensivo o que cause el incumplimiento de
+              estos Términos y Condiciones. Usted garantiza y declara que: Tiene derecho a publicar los Comentarios en
+              nuestro sitio web y tiene todas las licencias y consentimientos necesarios para hacerlo; Los Comentarios
+              no invaden ningún derecho de propiedad intelectual, incluidos, entre otros, derechos de autor, patentes
+              o marcas registradas de terceros; Los Comentarios no contienen ningún material difamatorio, calumnioso, 
+              ofensivo, indecente o ilegal de otro modo, que es una invasión de la privacidad. Los Comentarios no se 
+              utilizarán para solicitar o promover negocios o costumbres o presentar actividades comerciales o actividades
+              ilegales.
+              Por la presente, otorga a DV-Vapor Games una licencia no exclusiva para usar, reproducir, editar y autorizar a otros a usar,
+              reproducir y editar cualquiera de sus Comentarios en cualquiera y todas las formas, formatos o medios. 
+              Hipervínculos a nuestro contenido: las siguientes organizaciones pueden vincular a nuestro sitio web sin aprobación 
+              previa por escrito: agencias gubernamentales; Los motores de búsqueda; Organizaciones de noticias; Los distribuidores
+              de directorios en línea pueden vincularse a nuestro sitio web de la misma manera que vinculan a los sitios web de otras
+              empresas enumeradas; y empresas acreditadas en todo el sistema, excepto las que solicitan organizaciones sin fines de lucro, 
+              centros comerciales de caridad y grupos de recaudación de fondos de caridad que no pueden tener hipervínculos
+              a nuestro sitio web. Estas organizaciones pueden vincular a nuestra página de inicio, publicaciones u otra información del
+              sitio web siempre que el enlace: (a) no sea engañoso de ninguna manera; (b) no implica falsamente patrocinio, respaldo o
+              aprobación de la parte vinculada y sus productos y/o servicios; y (c) encaja dentro del contexto del sitio de la parte
+              vinculada. Podemos considerar y aprobar otras solicitudes de enlace de los siguientes tipos de organizaciones: fuentes 
+              de información comercial y/o de consumidores comúnmente conocidas; sitios de la comunidad dot.com; asociaciones u otros
+              grupos que representen organizaciones benéficas; distribuidores de directorios en línea; portales de internet; empresas
+              de contabilidad, derecho y consultoría; e instituciones educativas y asociaciones comerciales. Aprobaremos las 
+              solicitudes de enlace de estas organizaciones si decidimos que: (a) el enlace no nos haría ver desfavorablemente
+              a nosotros mismos oa nuestros negocios acreditados; (b) la organización no tiene registros negativos con nosotros;
+              (c) el beneficio para nosotros de la visibilidad del hipervínculo compensa la ausencia de DV-Vapor Games; y (d) el enlace
+              está en el contexto de información general de recursos. Estas organizaciones pueden vincular a nuestra página de 
+              inicio siempre que el enlace: (a) no sea engañoso de ninguna manera; (b) no implica falsamente patrocinio, respaldo
+              o aprobación de la parte vinculada y sus productos o servicios; y (c) encaja dentro del contexto del sitio de la
+              parte vinculada. Si usted es una de las organizaciones enumeradas en el párrafo 2 anterior y está interesado en 
+              vincular a nuestro sitio web, debe informarnos enviando un correo electrónico a DV-Vapor Games. Incluya su nombre, el 
+              nombre de su organización, la información de contacto, así como la URL de su sitio, una lista de las URL desde
+              las que pretende vincular a nuestro sitio web y una lista de las URL de nuestro sitio a las que le gustaría Enlace.
+              Espere 2-3 semanas para una respuesta. Las organizaciones aprobadas pueden tener hipervínculos a nuestro sitio web
+              de la siguiente manera: mediante el uso de nuestro nombre corporativo; o Mediante el uso del localizador uniforme
+              de recursos al que se vincula; o Usar cualquier otra descripción de nuestro sitio web vinculado que tenga
+              sentido dentro del contexto y el formato del contenido en el sitio de la parte vinculada. No se permitirá 
+              el uso del logotipo de DV-Vapor Games u otra obra de arte para vincular en ausencia de un acuerdo de licencia de 
+              marca registrada. Responsabilidad por el contenido: no seremos responsables de ningún contenido que aparezca 
+              en su sitio web. Usted acepta protegernos y defendernos contra todos los reclamos que se presenten en su sitio
+              web. Ningún enlace debe aparecer en ningún sitio web que pueda interpretarse como calumnioso, obsceno o 
+              criminal, o que infrinja, de otro modo viole o promueva la infracción u otra violación de los derechos de
+              terceros. Reserva de derechos: Nos reservamos el derecho de solicitarle que elimine todos los enlaces o 
+              cualquier enlace particular a nuestro sitio web. Usted aprueba eliminar inmediatamente todos los enlaces 
+              a nuestro sitio web a pedido. También nos reservamos el derecho de modificar estos términos y condiciones
+              y su política de vinculación en cualquier momento.
+              Al vincularse continuamente a nuestro sitio web, usted acepta estar sujeto y seguir estos términos y condiciones
+              de vinculación. Eliminación de enlaces de nuestro sitio web: si encuentra algún enlace en nuestro sitio web 
+              que sea ofensivo por cualquier motivo, puede contactarnos e informarnos en cualquier momento. Consideraremos 
+              solicitudes para eliminar enlaces, pero no estamos obligados a hacerlo ni a responderle directamente. 
+              No garantizamos que la información de este sitio web sea correcta. No garantizamos su integridad o exactitud, 
+              ni prometemos asegurarnos de que el sitio web permanezca disponible o que el material del sitio web se mantenga
+              actualizado. Descargo de responsabilidad: en la medida máxima permitida por la ley aplicable, excluimos todas
+              las representaciones, garantías y condiciones relacionadas con nuestro sitio web y el uso de este sitio web.
+              Nada en este descargo de responsabilidad: limitará o excluirá nuestra responsabilidad o la suya por muerte 
+              o lesiones personales; limitar o excluir nuestra o su responsabilidad por fraude o tergiversación 
+              fraudulenta; limitar cualquiera de nuestras responsabilidades o las suyas de cualquier manera que no
+              esté permitida por la ley aplicable; o excluir cualquiera de nuestras o sus responsabilidades que no puedan
+              ser excluidas bajo la ley aplicable. Las limitaciones y prohibiciones de responsabilidad establecidas 
+              en esta Sección y en otras partes de este descargo de responsabilidad: (a) están sujetas al párrafo 
+              anterior; y (b) rigen todas las responsabilidades que surjan en virtud de la exención de responsabilidad,
+              incluidas las responsabilidades que surjan por contrato, agravio y por incumplimiento de obligaciones 
+              legales. Siempre que el sitio web y la información y los servicios en el sitio web se proporcionen de 
+              forma gratuita, no seremos responsables de ninguna pérdida o daño de ningún tipo.</p>
+
+            Copyright © 2019 DV-Vapor Games. Todos los derechos son reservados.
+          </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin modal terminos-->
+
+ 
+
+  <!-- Modal Carrito -->
+  <div class="modal fade" id="carrito" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title  text-success fw-bold" id="exampleModalToggleLabel">Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="card mb-3" style="max-width: auto;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/assasinscreed.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+
+                  <h5 class="card-title">Assasin´s Creed Mirage <span class="badge bg-success">$250</span></h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
               </div>
             </div>
           </div>
-
+        </div>
+        <div class="modal-footer d-flex justify-content-evenly">
+          <button class="btn btn-outline-danger" data-bs-target="#" data-bs-toggle="modal">Cerrar</button>
+          <button class="btn btn-outline-success" data-bs-target="#compra" data-bs-toggle="modal">Comprar como regalo</button>
+          <button type="button" class="btn btn-outline-success" ><a href="#compra" class="login_a">Comprar para mi</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL CARRITO -->
+  <!-- Modal de compra -->
+  <div class="modal fade" id="compra" aria-hidden="true" aria-labelledby="compra" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
         
+        <div class="modal-body">
+          <h3 class="text-center text-success">Información Personal</h3>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputFirstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputFirstName" placeholder="Ejemplo">
+            </div>
+            <div class="col-md-6">
+              <label for="inputLastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="inputLastName" placeholder="Ejemplo">
+            </div>
+            <div class="col-6">
+              <label for="inputAddress" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="inputAddress" placeholder="ejemplo@ejemplo.com">
+            </div>
+            <div class="col-md-2">
+              <label for="inputArea" class="form-label">C. Área</label>
+              <input type="text" class="form-control" id="inputArea" placeholder="000">
+              
+            </div>
+            <div class="col-md-4">
+              <label for="inpuNumber" class="form-label">Número</label>
+              <input type="text" class="form-control" id="inputNumber" placeholder="000000" >
+            </div>
+            <div class="col-md-6">
+              <label for="inputAddress" class="form-label">País</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccionar...</option>
+                <option value="1">Argentina</option>
+                <option value="2">Australia</option>
+                <option value="3">Bolivia</option>
+                <option value="4">Brasil</option>
+                <option value="5">Chile</option>
+                <option value="6">Ecuador</option>
+                <option value="7">Paraguay</option>
+                <option value="8">Uruguay</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="inputAddress" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Ciudad">
+            </div>
+            <div class="col-12">
+              <p> </p>
+              <hr>
+              <p> </p>
+              <h3 class="text-center text-success">Información Pago</h3>
+            </div>
+            <div class="col-md-6">
+              <label for="inputCard" class="form-label">Número de tarjeta</label>
+              <input type="text" class="form-control" id="inputCard" placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="col-md-3">
+              <label for="inputExpiry" class="form-label">Fecha de expiración</label>
+              <input type="text" class="form-control" id="inputExpiry" placeholder="MM/YY">
+            </div>
+            <div class="col-md-3">
+              <label for="inputCVC" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="inputCVC" placeholder="CVV">
+            </div>
+            <div class="col-6">
+              <label for="inputAddress" class="form-label">DNI del titular</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="00.000.000">
+            </div>
+            <div class="col-6">
+              <label for="inputAddress" class="form-label">Total a pagar</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input class="form-control" type="text" value="1540.80" aria-label="Disabled input example" disabled readonly>
+                
+              </div>
+            </div>
+              
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-around">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
+          <button class="btn btn-outline-success" data-bs-target="#gracias" data-bs-toggle="modal">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal de donacion finalizada -->
+  <div class="modal fade" id="gracias" aria-hidden="true" aria-labelledby="gracias" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4> ¡Compra realizada con exito!</h4>
+          <p class="text-center">
+            <img src="img/grax.jpeg" alt="" width="750px">
+          </p>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
  </body>

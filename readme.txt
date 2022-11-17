@@ -19,8 +19,8 @@ Puntos de los ejercicios:
         - El botón "Únete" activa un Modal el cual tiene un formulario para inicio de sesión, junto a 2 botones de acción.
             - El botón "Iniciar sesión".
             - El botón "Registrarse" el cual activa otro modal que muestra un formulario para registrarse.
-        - El botón "Aves" redirecciona a la pagina aves.html .
+        - El botón "Vapor Games" redirecciona a la pagina Vapor Games.html .
 
-    -En la sección de Aves, se encuentran card un botón de acción.
+    -En la sección de Vapor Games, se encuentran card un botón de acción.
         - El botón "Donar" activa un Modal el cual tiene un formulario para donar.
         
