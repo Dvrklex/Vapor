@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu&family=Yantramanav&display=swap');
 :root{
     --orange: #FC7A1E;
     --light: #F2F4F3;
@@ -42,6 +45,16 @@ body{
     width: 250px;
     height: 250px;
     margin: auto;
+}
+h3{
+    font-family: 'Yantramanav', sans-serif;
+}
+h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+p{
+    font-family: 'Manrope', sans-serif;
+
 }
 .team_container h2{
     text-align: center;
