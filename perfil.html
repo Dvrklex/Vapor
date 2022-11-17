@@ -4,10 +4,10 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <!-- <link rel="stylesheet" href="css/nav.css"/> -->
+   <link rel="stylesheet" href="css/perfil.css"/>
    <link rel="stylesheet" href="css/footer.css"/>
    <link rel="stylesheet" href="css/styles.css" />
-   <link rel="stylesheet" href="css/noticias.css" />
+   <!-- <link rel="stylesheet" href="css/noticias.css" /> -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
    <title>Vapor</title>
  </head>
@@ -47,13 +47,15 @@
           </div>
           
         </div>
-      </div>
-    </nav>
-      <!-- Fin Menu bar -->
-       <!-- CONTENIDO  DEL PERFIL-->
 
-      <div class="container-noticias justify-content-center">
-        <h2 class="px-5 pt-5 text-white">Alexis Peralta</h2>
+        
+      </nav>
+      <!-- Fin Menu bar -->
+      <!-- CONTENIDO  DEL PERFIL-->
+
+      <div class="container-noticias justify-content-center pt-5">
+
+        <h2 class="px-5 pt-5 text-white pb-5">Alexis Peralta</h2>
 
         <div class="container-fluid d-flex justify-content-center">
             <img class="d-block m-3 p-1 border border-info rounded-pill" style="width: 250px;" src="img/Polite_Cat.webp" alt="Third slide">
@@ -219,108 +221,84 @@
 
   
   
-  <!-- Modal inicio de FAQ -->
-  <div class="modal" id="faqs"tabindex="-1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content ">
-       
-        <div class="modal-body">
-          <!--Section: FAQ-->
-          <section>
-            <h2 class="h1-responsive font-weight-bold text-center my-4 text-success fw-bold">Preguntas frecuentes</h2>
-            <!--First row-->
-            <div class="card card border-success mb-3">
-              <div class="card-body">
-                <div class="accordion" id="accordionExample">
-                  <!-- Primera pregunta -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h6 class="mb-3 text-success fw-bold">¿Se pueden visitar las fundaciones?</h6>
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Por supuesto. Estas funcionaciones ofrecen recorridos guiados para que puedas conocer sus animales y más.
+ 
+          <!-- Inicio de modal FAQs -->
+          <div class="modal" id="faqs"tabindex="-1">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <!--Section: FAQ-->
+                  <section>
+                    <h2 class="h1-responsive font-weight-bold text-center my-4 text-success fw-bold">Preguntas frecuentes</h2>
+                    <!--First row-->
+                    <div class="card card border-success mb-3">
+                      <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                          <!-- Primera pregunta -->
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h6 class="mb-3 text-success fw-bold">¿Como reembolso un juego?</h6>
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Actualmente no esta disponible esta funcion pero lo estara en un futuro
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Segunda pregunta -->
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h6 class="mb-3 text-success fw-bold">¿Como se dividen las ganancias con las empresas?</h6>
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                El 80% del total del precio de un proucto va a los desarrolladores, el 20% restante a Vapor
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Tercera pregunta -->
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h6 class="mb-3 text-success fw-bold">¿Cómo puedo saber si mi compra se proceso correctamente?</h6>
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Al momento de realizar una compra, se te enviará un correo electrónico con una confirmación de la misma y una aviso visual en la pagina web.
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- Quinta pregunta -->
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <h6 class="mb-3 text-success fw-bold">¿Estara en un futuro disponible alguna forma de mercado entre usuarios?</h6>
+                              </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Si, esta en los planes diseñar y mercado de items en donde los usuarios puedan intercambiar elementos por dinero real.
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Segunda pregunta -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h6 class="mb-3 text-success fw-bold">¿Cuál es la cantidad mínima para donar?</h6>
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Actualmente, la cantidad mínima para donar es de 1€.
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Tercera pregunta -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <h6 class="mb-3 text-success fw-bold">¿Cómo puedo saber si mi donación llegó correctamente?</h6>
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Al momento de realizar una donación, se te enviará un correo electrónico con una confirmación de la misma.
-                      </div>
-                    </div>
-                  </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
                   
-                  <!-- Quinta pregunta -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <h6 class="mb-3 text-success fw-bold">¿Puedo donar a más de una fundación?</h6>
-                      </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Si, puedes donar a más de una fundación, esto es totalmente a elección, tanto a quien donar como cuanto donar.
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Sexta pregunta -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSix">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        <h6 class="mb-3 text-success fw-bold">¿Es seguro hacer donativos a través de la web?</h6>
-                      </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Si. Al momento de efectuar la donación, se le enviará un correo electrónico con el comprobante y confirmación de la misma. El dinero enviado, es depositado en un plazo de 24 horas en la cuenta bancaria de la fundación.
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Septima pregunta -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSeven">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        <h6 class="mb-3 text-success fw-bold">¿Cómo se financian las diferentes fundaciones?</h6>
-                      </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        Se financian a travez de las diferentes donaciones de las personas que hacen donativos. Y ademas, se financian a travez de empresas que ofrecen comida, medicamentos y demás elementos que ayudan al bienestar de nuestro animales.
-                      </div>
-                    </div>
-                  </div>
-              </div>
+                </div>
             </div>
             </div>
-
-          </section>
+              </section>
           <!--Section: FAQ-->
-          </div>
-          <div class="modal-footer d-flex justify-content-center">
-            
-            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
@@ -371,11 +349,13 @@
               </div>
             </div>
           </section>
+          <!--Section: Contact-->
+        </div>
+        <div class="modal-footer">
           <div class="text-center d-flex justify-content-around">
             <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
             <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Enviar</button>
           </div>
-          <!--Section: Contact-->
         </div>
       </div>
     </div>
@@ -626,7 +606,7 @@
           </p>
         </div>
         <div class="modal-footer d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="gracias">Cerrar</button>
         </div>
       </div>
     </div>

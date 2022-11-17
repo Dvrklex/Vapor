@@ -1,0 +1,8 @@
+.container-noticias{
+    background-color: var(--dark_blue);
+}
+
+input[type=search] {
+    margin-top: auto;
+}
+
