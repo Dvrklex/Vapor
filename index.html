@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/noticias.css">
         <!-- <link rel="stylesheet" href="css/style.css"> --> <!-- CSS VIEJO DE LA PAGINA ANTERIOR -->
         <link rel="stylesheet" href="css/mobile.css">
         <!-- <link rel="stylesheet" href="css/footer.css"> -->
@@ -27,20 +28,24 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
-              <li class="nav-item">
+              <li class="drop-service nav-item">
                 <a class="nav-link" href="juegos.html">Tienda</a>
+                <ul class="drop_down">
+                  <li><a href="/">Categorías</a></li>
+                  <li><a href="/">Ofertas</a></li>
+                  <li><a href="/">Recomendados</a></li>
+                  <li><a href="/">Visto recientemente</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading1">Fundaciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">Menciones</a>
-              </li>               
-            </ul>
+              <!-- DROPDOWN MENU  CATEGORIAS-->
+                
             
+            </ul>
+            <!-- Modal de Carrito -->
+            <!-- Button trigger modal -->
+            <a class="btn btn-outline-success" data-bs-toggle="modal" href="#carrito" role="button">Mi Carrito</a>
             <!-- Boton Unirse que abre un modal -->
             <a class="btn btn-outline-success" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Únete</a>
-            
             
           </div>
         </div>
@@ -434,7 +439,7 @@
                 </div>
                 <div class="modal-footer d-flex justify-content-evenly">
                   <button class="btn btn-outline-info" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrarse</button>
-                  <button type="button" class="btn btn-outline-success">Iniciar Sesión</button>
+                  <button type="button" class="btn btn-outline-success" ><a href="perfil.html" class="login_a">Iniciar Sesión</a></button>
                 </div>
               </div>
             </div>
@@ -484,6 +489,33 @@
               </div>
             </div>
           </div>
-
+          <!-- Modal Carrito -->
+          <div class="modal fade" id="carrito aria-hidden="true" aria-labelledby="carritoLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title  text-success fw-bold" id="carritoLabel">¡Hola! Ingresa en tu cuenta</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                      <a href="#" class="link-primary">¿Has olvidado tu contraseña?</a>
+                    </div>                  
+                  </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-evenly">
+                  <button class="btn btn-outline-info" data-bs-target="#carritoToggle2" data-bs-toggle="modal">Registrarse</button>
+                  <button type="button" class="btn btn-outline-success" ><a href="perfil.html" class="login_a">Iniciar Sesión</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
         </body>
 </html>

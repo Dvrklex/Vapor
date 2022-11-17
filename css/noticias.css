@@ -10,14 +10,15 @@
     --light_pink: #FCEADE; /*Puede ser para dar contraste*/
     --border_radius: 5px; 
 }
-.container-noticias{
-    background-color: #001A23;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+.container-noticias h2{
+    text-align: center;
+    /* background-color: #001A23; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-flow: column; */
 
 
 }

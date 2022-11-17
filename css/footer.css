@@ -13,7 +13,7 @@
 }
 footer{
   display: flex;
-  font-weight: bold;
+  /* font-weight: bold; */
   justify-content: space-between;
   font-size: var(--normal);
   background-color: #111111;
@@ -21,7 +21,9 @@ footer{
   color: var(--white-color);
 }
 .option a{
-  font-style: italic;
+  text-decoration: none;
+  padding: 15px;
+  /* font-style: italic; */
   color:white;
   
 }

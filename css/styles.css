@@ -25,3 +25,46 @@ body{
     max-width: 100%;
     height: auto;
 }
+
+.login_a{
+    text-decoration: none;
+    color: green;
+}
+
+.login_a:hover{
+    color: white;
+}
+
+.drop-service {
+    position: relative; 
+   }
+.drop_down {
+    background-color:var(--dark_red);
+    padding: 1em 0;
+    right: 0px;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: var(--border_radius);
+    top: 40px;
+    border: var(--orange) 1px solid;
+   }
+.drop_down li + li {
+    margin-top: 10px;
+   }
+.drop_down li {
+    padding: 0.5em 1em;
+    width: 9em;
+    text-align: center;
+   }
+.drop_down li a{
+    color: var(--light);
+    text-shadow: none; /*Le desactivo el neon*/
+}
+.drop_down li:hover {
+    background-color: var(--dark_red);
+    border: var(--orange) 1px solid;
+   }
+.drop-service:hover .drop_down {
+    display: block;
+
+   }
