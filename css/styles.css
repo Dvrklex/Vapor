@@ -8,6 +8,7 @@
     --light_orange: #FACFAD; /*Prueba*/
     --linen: #FFF4E9; /*Prueba*/
     --light_pink: #FCEADE; /*Puede ser para dar contraste*/
+    --border_radius: 5px; 
 }
 ::-webkit-scrollbar {
     display: none;
