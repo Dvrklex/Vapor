@@ -11,12 +11,13 @@
   --light_pink: #FCEADE; /*Puede ser para dar contraste*/
   --border_radius: 5px; 
 }
+
 footer{
   display: flex;
   
   justify-content: space-between;
   font-size: var(--normal);
-  background-color: #111111;
+  background-color: var(--dark_red2);
   padding: var(--space);
   color: var(--white-color);
 }
