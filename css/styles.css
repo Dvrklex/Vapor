@@ -19,6 +19,7 @@ body{
 }
 
 .banner img{
+    margin-top: 40px;
     display: inline-block;
     vertical-align: middle;
     max-width: 100%;
