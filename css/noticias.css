@@ -1,5 +1,23 @@
+:root{
+    --orange: #FC7A1E;
+    --light: #F2F4F3;
+    --red: #AE0E0F;
+    --dark_red: #510000; 
+    --dark: #0F0E0E;
+    --dark_blue: #001A23;
+    --light_orange: #FACFAD; /*Prueba*/
+    --linen: #FFF4E9; /*Prueba*/
+    --light_pink: #FCEADE; /*Puede ser para dar contraste*/
+    --border_radius: 5px; 
+}
 .container-noticias{
     background-color: #001A23;
     height: 100%;
     width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+
 }

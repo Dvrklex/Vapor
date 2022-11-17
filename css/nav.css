@@ -37,13 +37,19 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 30px 100px;
     background-color: rgb(46, 1, 5);
     color: #fff;
-    position: ;
+    /* position: */
    }
 .nav-links a {
+    margin-top: 5px;
     color: var(--light);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--ight);
     text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
@@ -55,8 +61,8 @@ li {
    }
    /* LOGO */
 .logo img{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
    }
    /* NAVBAR MENU */
 .menu {
@@ -72,7 +78,7 @@ li {
     border: var(--orange) 1px solid;
    }
 .menu li {
-    padding: 5px 14px;
+    padding: 15px 14px;
    }
    /* DROPDOWN MENU */
 .drop-service {

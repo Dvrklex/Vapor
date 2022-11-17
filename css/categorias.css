@@ -1,0 +1,53 @@
+:root{
+    --orange: #FC7A1E;
+    --light: #F2F4F3;
+    --red: #AE0E0F;
+    --dark_red: #510000; 
+    --dark: #0F0E0E;
+    --dark_blue: #001A23;
+    --light_orange: #FACFAD; /*Prueba*/
+    --linen: #FFF4E9; /*Prueba*/
+    --light_pink: #FCEADE; /*Puede ser para dar contraste*/
+    --border_radius: 5px; 
+}
+.container-categorias{
+    background-color: #001A23;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+/* Preguntar si a estos titulos le coloco efecto neon */
+.container-categorias h3{
+    color: var(--light);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container-categorias hr{
+    border: 1px solid var(--light); 
+    
+}
+
+.card_container:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.card:hover{
+    box-shadow: 0px 0px 5px 3px var(--orange);
+    -webkit-box-shadow: 0px 0px 5px 3px var(--orange);
+    -moz-box-shadow: 0px 0px 5px 3px var(--orange);
+}
+.text p{
+    color: var(--light);
+    font-size: 18px;
+    /* font-weight: 500; */
+    text-align: center;
+}
